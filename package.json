@@ -1,0 +1,16 @@
+{
+  "name": "kommunalCrowd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marian Sievers <info@mariansievers.de>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^0.14.0",
+    "koa-body": "^0.4.0",
+    "koa-router": "^3.8.0"
+  }
+}
