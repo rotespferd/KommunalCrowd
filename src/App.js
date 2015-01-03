@@ -1,5 +1,7 @@
 var koa = require("koa");
 
+var Logger = require("./middleware/Logger").Logger;
+
 var app = koa();
 
 exports.App = {
@@ -15,12 +17,7 @@ exports.App = {
         });
 
         // logger
-        app.use(function *(next) {
-            var start = new Date();
-            yield next;
-            var ms = new Date() - start;
-            console.log('%s %s - %s ms', this.method, this.url, ms);
-        });
+        app.use(Logger.executionTime);
 
         // ----- response -----
 
