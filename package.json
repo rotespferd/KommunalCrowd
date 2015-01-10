@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "mocha --harmony test/unit"
+    "test": "node --harmony node_modules/istanbul/lib/cli.js cover _mocha test/unit -- -u exports -R spec"
   },
   "author": "Marian Sievers <info@mariansievers.de>",
   "license": "MIT",
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "coveralls": "^2.11.2",
+    "istanbul": "git://github.com/gotwarlost/istanbul.git#harmony",
     "jest": "^0.1.37",
     "jscoverage": "^0.5.9",
     "mocha": "^2.1.0",
