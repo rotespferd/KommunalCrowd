@@ -5,7 +5,7 @@ var Logger = require("./middleware/Logger").Logger;
 var app = koa();
 
 exports.App = {
-    init: function () {
+    init: function (port) {
         console.log("Init the app");
 
         // x-response-time
@@ -26,6 +26,6 @@ exports.App = {
         });
 
         // app start
-        app.listen(3000);
+        app.listen(port);
     }
 };
