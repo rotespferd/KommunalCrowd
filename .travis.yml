@@ -3,5 +3,5 @@ node_js:
   - "0.11"
 
 after_success:
-  - ./node_modules/.bin/jscoverage lib lib-cov
+  - ./node_modules/.bin/jscoverage src src-cov
   - ./node_modules/.bin/mocha --harmony test/unit/**.js -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js
