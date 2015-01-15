@@ -28,3 +28,7 @@ node_modules
 
 # IDE files
 .idea
+
+# Meteor
+.meteor/local
+.meteor/meteorite
