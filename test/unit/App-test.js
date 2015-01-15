@@ -17,6 +17,10 @@ describe('App', function () {
             (error === undefined).should.be.false;
             response.should.not.be.null;
             response.statusCode.should.be.exactly(200).and.be.a.Number;
+
+
+            console.log(response.headers['X-Response-Time']);
+
             done();
         });
     });
