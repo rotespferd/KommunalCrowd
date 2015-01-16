@@ -7,6 +7,6 @@
 meteor-platform
 autopublish
 insecure
-bootstrap
 ecwyne:polymer
 ecwyne:polymer-elements
+fezvrasta:bootstrap-material-design
