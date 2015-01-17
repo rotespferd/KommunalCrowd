@@ -53,16 +53,7 @@
 <body>
 <core-header-panel unresolved>
 
-    <core-toolbar class="core-narrow">
-        <core-icon-button icon="menu" on-tap="{{menuAction}}"></core-icon-button>
-        <paper-tabs id="tabs" selected="all" self-end>
-            <paper-tab name="home">Home</paper-tab>
-            <paper-tab name="ueber">Über das Projekt</paper-tab>
-            <paper-tab name="news">Neuigkeiten</paper-tab>
-            <paper-tab name="ticker">Ticker</paper-tab>
-            <paper-tab name="login">Login</paper-tab>
-        </paper-tabs>
-    </core-toolbar>
+    {{> header }}
 
     <!-- main page content will go here -->
     <div class="container">
