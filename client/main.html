@@ -1,0 +1,100 @@
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <title>KommunalCrowd</title>
+
+    <!-- fonts -->
+    <link rel="import" href="bower_components/font-roboto/roboto.html"/>
+
+    <!-- Polymer - parts -->
+    <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+    <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+    <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+    <link rel="import" href="bower_components/paper-shadow/paper-shadow.html"/>
+
+    <!-- styles -->
+    <style>
+        html,body {
+            height: 100%;
+            margin: 0;
+            background-color: #E5E5E5;
+            font-family: 'RobotoDraft', sans-serif;
+        }
+        core-header-panel {
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        core-toolbar {
+            background: #03a9f4;
+            color: white;
+        }
+        #tabs {
+            width: 100%;
+            margin: 0;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            text-transform: uppercase;
+        }
+
+        .container {
+            margin-top: 25px;
+        }
+
+        .col {
+            background-color: #FFF;
+        }
+    </style>
+</head>
+<body>
+<core-header-panel unresolved>
+
+    <core-toolbar class="core-narrow">
+        <core-icon-button icon="menu" on-tap="{{menuAction}}"></core-icon-button>
+        <paper-tabs id="tabs" selected="all" self-end>
+            <paper-tab name="home">Home</paper-tab>
+            <paper-tab name="ueber">Über das Projekt</paper-tab>
+            <paper-tab name="news">Neuigkeiten</paper-tab>
+            <paper-tab name="ticker">Ticker</paper-tab>
+            <paper-tab name="login">Login</paper-tab>
+        </paper-tabs>
+    </core-toolbar>
+
+    <!-- main page content will go here -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h1>KommunalCrowd</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m4 l4 z-depth-1 red lighten-2">
+                <h3>Header 1</h3>
+                <p>
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Phasellus consectetuer vestibulum elit.
+                </p>
+            </div>
+
+            <div class="col s12 m4 l4 z-depth-1 blue lighten-2">
+                <h3>Header 2</h3>
+                <p>
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Phasellus consectetuer vestibulum elit.
+                </p>
+            </div>
+
+            <div class="col s12 m4 l4 z-depth-1 green lighten-2">
+                <h3>Header 3</h3>
+                <p>
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Phasellus consectetuer vestibulum elit.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</core-header-panel>
+</body>
