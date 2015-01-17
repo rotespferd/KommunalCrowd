@@ -8,13 +8,13 @@ blaze-tools@1.0.2
 boilerplate-generator@1.0.2
 callback-hook@1.0.2
 check@1.0.3
+d0minikk:materialize-meteor@1.94.2
 ddp@1.0.13
 deps@1.0.6
 ecwyne:polymer@1.0.3
 ecwyne:polymer-elements@1.0.4
 ejson@1.0.5
 fastclick@1.0.2
-fezvrasta:bootstrap-material-design@0.2.1
 follower-livedata@1.0.3
 geojson-utils@1.0.2
 html-tools@1.0.3
@@ -46,7 +46,6 @@ spacebars@1.0.4
 spacebars-compiler@1.0.4
 templating@1.0.10
 tracker@1.0.4
-twbs:bootstrap@3.3.1
 ui@1.0.5
 underscore@1.0.2
 url@1.0.3
