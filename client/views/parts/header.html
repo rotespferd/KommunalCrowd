@@ -1,12 +1,16 @@
 <template name="header">
-    <core-toolbar class="core-narrow">
-        <core-icon-button icon="menu" on-tap="{{menuAction}}"></core-icon-button>
-        <paper-tabs id="tabs" selected="all" self-end>
-            <paper-tab name="home">Home</paper-tab>
-            <paper-tab name="ueber">Über das Projekt</paper-tab>
-            <paper-tab name="news">Neuigkeiten</paper-tab>
-            <paper-tab name="ticker">Ticker</paper-tab>
-            <paper-tab name="login">Login</paper-tab>
-        </paper-tabs>
-    </core-toolbar>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right side-nav">
+                    <li><a class="waves-effect" href="#">Sass</a></li>
+                    <li><a class="waves-effect" href="#">Components</a></li>
+                    <li><a class="waves-effect" href="#">JavaScript</a></li>
+                </ul>
+
+                <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </nav>
+    </div>
 </template>

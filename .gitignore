@@ -32,3 +32,5 @@ node_modules
 # Meteor
 .meteor/local
 .meteor/meteorite
+
+settings.json

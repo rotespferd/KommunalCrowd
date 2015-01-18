@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>KommunalCrowd</title>
 
@@ -13,6 +13,7 @@
     <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
     <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
     <link rel="import" href="bower_components/paper-shadow/paper-shadow.html"/>
+    <link rel="import" href="bower_components/paper-item/paper-item.html"/>
 
     <!-- styles -->
     <style>
@@ -22,37 +23,13 @@
             background-color: #E5E5E5;
             font-family: 'RobotoDraft', sans-serif;
         }
-        core-header-panel {
-            height: 100%;
-            overflow: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-        core-toolbar {
-            background: #03a9f4;
-            color: white;
-        }
-        #tabs {
-            width: 100%;
-            margin: 0;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            text-transform: uppercase;
-        }
-
         .container {
             margin-top: 25px;
         }
 
-        .col {
-            background-color: #FFF;
-        }
     </style>
 </head>
 <body>
-<core-header-panel unresolved>
-
     {{> header }}
 
     <!-- main page content will go here -->
@@ -87,5 +64,10 @@
         </div>
     </div>
 
-</core-header-panel>
+    <!-- mpve this to own file! -->
+    <script>
+        jQuery(document).ready(function () {
+            $(".button-collapse").sideNav();
+        });
+    </script>
 </body>
