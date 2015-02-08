@@ -23,7 +23,8 @@
     },
     "scripts": {
         "start": "node app.js",
-        "debug": "node debug app.js"
+        "debug": "node debug app.js",
+        "test": "node --harmony node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha test/unit && ./node_modules/.bin/istanbul-coveralls"
     },
     "main": "app.js",
     "repository": "",
