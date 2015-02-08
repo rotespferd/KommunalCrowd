@@ -134,6 +134,8 @@ module.exports = function (grunt) {
   grunt.loadTasks(depsPath + '/grunt-contrib-less/tasks');
   grunt.loadTasks(depsPath + '/grunt-contrib-coffee/tasks');
 
+  grunt.loadNpmTasks('grunt-mocha-istanbul');
+
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -394,6 +396,19 @@ module.exports = function (grunt) {
        * Jade linker end
        ************************************/
     },
+    /************************************
+     * Testing tasks
+     ************************************/
+    mocha_istanbul: {
+      coverage: {
+        src: 'test', // the folder, not the files
+        options: {
+          coverageFolder: 'coverage',
+          mask: '**/*.js',
+          root: 'api/'
+        }
+      }
+    },
 
     watch: {
       api: {
@@ -464,6 +479,10 @@ module.exports = function (grunt) {
     'sails-linker:prodJsJADE',
     'sails-linker:prodStylesJADE',
     'sails-linker:devTplJADE'
+  ]);
+
+  grunt.registerTask('test', [
+    'mocha_istanbul:coverage'
   ]);
 
   // When API files are changed:
