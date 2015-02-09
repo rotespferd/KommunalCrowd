@@ -404,7 +404,7 @@ module.exports = function (grunt) {
         src: 'test', // the folder, not the files
         options: {
           coverageFolder: 'coverage',
-          mask: '**/*.js',
+          mask: '**/*.test.js',
           root: 'api/'
         }
       }
